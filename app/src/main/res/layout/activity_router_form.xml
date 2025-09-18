@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marca" />
+
+        <EditText
+            android:id="@+id/edtMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cisco" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modelo" />
+
+        <EditText
+            android:id="@+id/edtModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ISR 4451-X" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Velocidad soportada" />
+
+        <EditText
+            android:id="@+id/edtVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1 Gbps" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado" />
+
+        <Spinner
+            android:id="@+id/spnEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
