@@ -15,7 +15,9 @@
         <activity android:name=".SwitchListActivity" />
         <activity android:name=".RouterListActivity" />
         <activity android:name=".RouterFormActivity" />
-
+        <activity android:name=".SwitchFormActivity" />
+        <activity android:name=".ApFormActivity" />
+        <activity android:name=".ApListActivity" />
 
         <activity
             android:name=".MainActivity"

@@ -25,5 +25,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
+    <Button
+        android:id="@+id/btnAccessPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Access Points"
+        app:layout_constraintTop_toBottomOf="@id/btnSwitches"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

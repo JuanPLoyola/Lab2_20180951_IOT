@@ -25,5 +25,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, SwitchListActivity.class);
             startActivity(intent);
         });
+
+        binding.btnAccessPoints.setOnClickListener(v ->
+                startActivity(new Intent(this, ApListActivity.class)));
     }
 }
