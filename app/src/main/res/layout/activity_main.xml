@@ -35,4 +35,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
 
+    <Button
+        android:id="@+id/btnReportes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reportes"
+        app:layout_constraintTop_toBottomOf="@id/btnAccessPoints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

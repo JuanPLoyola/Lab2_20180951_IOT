@@ -11,6 +11,8 @@ import com.example.lab2_2018951.model.AccessPoint;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.lab2_2018951.data.DataStore;
+
 public class ApListActivity extends AppCompatActivity {
 
     private ActivityApListBinding binding;
@@ -62,11 +64,13 @@ public class ApListActivity extends AppCompatActivity {
                 for (int i = 0; i < lista.size(); i++) {
                     if (lista.get(i).equals(apEditado)) {
                         lista.set(i, ap);
+                        DataStore.getInstance().replaceAp(apEditado, ap); // <—
                         break;
                     }
                 }
             } else {
                 lista.add(ap);
+                DataStore.getInstance().addAp(ap); // <—
             }
             adapter.notifyDataSetChanged();
             actualizarEmpty();

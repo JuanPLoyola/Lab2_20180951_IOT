@@ -28,5 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding.btnAccessPoints.setOnClickListener(v ->
                 startActivity(new Intent(this, ApListActivity.class)));
+
+        binding.btnReportes.setOnClickListener(v ->
+                startActivity(new Intent(this, ReportActivity.class)));
     }
 }

@@ -11,6 +11,9 @@ import com.example.lab2_2018951.model.SwitchDevice;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import com.example.lab2_2018951.data.DataStore;
+
 public class SwitchListActivity extends AppCompatActivity {
 
     private ActivitySwitchListBinding binding;
@@ -63,11 +66,13 @@ public class SwitchListActivity extends AppCompatActivity {
                 for (int i = 0; i < lista.size(); i++) {
                     if (lista.get(i).equals(switchEditado)) {
                         lista.set(i, sw);
+                        DataStore.getInstance().replaceSwitch(switchEditado, sw); // <—
                         break;
                     }
                 }
             } else {
                 lista.add(sw);
+                DataStore.getInstance().addSwitch(sw); // <—
             }
             adapter.notifyDataSetChanged();
             actualizarEmpty();

@@ -15,6 +15,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.lab2_2018951.data.DataStore;
+
+
 public class RouterListActivity extends AppCompatActivity {
 
     private ActivityRouterListBinding binding;
@@ -73,18 +76,17 @@ public class RouterListActivity extends AppCompatActivity {
             String modo = data.getStringExtra("modo");
 
             if ("editar".equals(modo)) {
-                // Reemplazar en la lista
                 for (int i = 0; i < listaRouters.size(); i++) {
                     if (listaRouters.get(i).equals(routerEditado)) {
-                        listaRouters.set(i, router);  // Reemplaza el objeto editado
+                        listaRouters.set(i, router);
+                        DataStore.getInstance().replaceRouter(routerEditado, router); // <—
                         break;
                     }
                 }
             } else {
-                // Nuevo router
                 listaRouters.add(router);
+                DataStore.getInstance().addRouter(router); // <—
             }
-
             adapter.notifyDataSetChanged();
             actualizarMensaje();
         }

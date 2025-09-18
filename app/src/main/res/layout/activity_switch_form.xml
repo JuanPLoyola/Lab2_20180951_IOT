@@ -5,17 +5,32 @@
     android:orientation="vertical"
     android:padding="20dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca" />
+
     <EditText
         android:id="@+id/edtMarcaSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Marca" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo" />
+
     <EditText
         android:id="@+id/edtModeloSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Modelo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de puertos" />
 
     <EditText
         android:id="@+id/edtPuertos"
@@ -24,10 +39,20 @@
         android:inputType="number"
         android:hint="Cantidad de puertos" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo" />
+
     <Spinner
         android:id="@+id/spnTipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado" />
     <Spinner
         android:id="@+id/spnEstado"
         android:layout_width="match_parent"

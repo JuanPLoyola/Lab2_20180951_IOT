@@ -18,6 +18,8 @@
         <activity android:name=".SwitchFormActivity" />
         <activity android:name=".ApFormActivity" />
         <activity android:name=".ApListActivity" />
+        <activity android:name=".ReportActivity" />
+
 
         <activity
             android:name=".MainActivity"
